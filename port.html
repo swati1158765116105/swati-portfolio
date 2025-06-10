@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Swati's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <nav>
+      <div class="logo">
+        <span class="panda">🐼</span> SWATI SAGARIKA
+       
+      </div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-text reveal">
+      <h2>Hi, I'm <span class="name">Swati <span class="panda">🐼</span></span></h2>
+      <p>Exploring AI, ML & Data Science Frontiers</p>
+    </div>
+  </header>
+
+  <section id="about" class="about reveal">
+    <h2>About Me</h2>
+    <p>I am a passionate frontend developer exploring the world of AI, ML, and Data Science.</p>
+    
+  </section>
+
+  <section class="about reveal">
+  <h2>About Me</h2>
+  <p>I'm passionate about frontend development, AI, ML, and data science exploration.</p>
+</section>
+
+
+
+  <section id="skills" class="skills reveal">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Python</div>
+      <div class="skill">Data Science</div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects reveal">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>My personal portfolio showcasing my skills and projects.</p>
+    </div>
+    <div class="project-card">
+      <h3>AI Chatbot</h3>
+      <p>A chatbot using AI concepts to assist users with queries.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact reveal">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Swati's Portfolio. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+  function reveal() {
+    const reveals = document.querySelectorAll('.reveal');
+
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const elementTop = reveals[i].getBoundingClientRect().top;
+      const revealPoint = 150;
+
+      if (elementTop < windowHeight - revealPoint) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', reveal);
+
+  // Initial call for when page loads
+  reveal();
+</script>
+
+</body>
+</html>
