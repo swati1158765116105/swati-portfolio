@@ -225,3 +225,27 @@ footer {
   font-size: 0.9rem;
   margin-top: 4rem;
 }
+
+.btn-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.glow-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #6c5ce7;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 10px #6c5ce7, 0 0 20px #6c5ce7;
+}
+
+.glow-btn:hover {
+  background-color: #a29bfe;
+  box-shadow: 0 0 20px #a29bfe, 0 0 30px #a29bfe;
+  transform: scale(1.1);
+}
