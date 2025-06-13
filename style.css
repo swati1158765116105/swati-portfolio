@@ -249,3 +249,16 @@ footer {
   box-shadow: 0 0 20px #a29bfe, 0 0 30px #a29bfe;
   transform: scale(1.1);
 }
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links img {
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
